@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  gatsby-preview-server:
+    restart: always
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/usr/app
+
